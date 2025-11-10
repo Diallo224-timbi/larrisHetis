@@ -1,0 +1,110 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Conteneur principal */
+.sidenav-container {
+  height: 100vh;
+  background-color: #C4CEC2; /* Gris clair de fond */
+}
+
+/* SideNav */
+.sidenav {
+  width: 250px;
+  background: linear-gradient(to bottom, #59BEC9, #D2B467); /* Vert clair → Beige */
+  color: #2D2926; /* Texte noir pour lisibilité */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.toolbar-title {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #2D2926;
+}
+
+/* Items du menu */
+.mat-list-item {
+  color: #008C95; /* Vert foncé */
+  border-radius: 6px;
+  margin: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+  font-weight: 500;
+}
+
+.mat-list-item:hover {
+  background: rgba(155, 126, 164, 0.3); /* Violet léger en hover */
+  color: #CCA1A6; /* Texte saumon sur hover */
+}
+
+.active-link {
+  background: rgba(199, 150, 116, 0.3); /* Marron clair pour actif */
+  color: #2D2926; /* Texte noir */
+}
+
+/* Icones */
+.mat-icon {
+  margin-right: 12px;
+  color: #9B7EA4; /* Violet */
+}
+
+/* Toolbar principale */
+.main-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #153a2f; /* Vert très foncé / presque noir */
+  color: #06FCE7; /* Bleu cyan pour contraste */
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-button {
+  margin-right: 15px;
+}
+
+/* Contenu principal */
+.content {
+  padding: 25px;
+  background-color: #F5F5F5;
+  min-height: calc(100vh - 64px);
+  font-family: 'Roboto', sans-serif;
+  color: #2D2926;
+}
+
+/* Cartes / Cards */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+}
+
+/* Optionnel : effet subtil sur cartes */
+.card:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+/* Styles globaux */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+/* Conteneur principal */
+.sidenav-container {
+  height: 100vh;
+  background-color: #C4CEC2; /* Gris clair de fond */
+}   

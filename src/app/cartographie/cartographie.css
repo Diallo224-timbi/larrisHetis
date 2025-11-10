@@ -1,0 +1,19 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.mat-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.clickable-image {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.05);
+}

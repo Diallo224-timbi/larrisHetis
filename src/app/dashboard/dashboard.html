@@ -1,0 +1,63 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened class="sidenav">
+    <mat-toolbar color="primary" class="toolbar-title">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/partage" routerLinkActive="active-link">
+        <mat-icon mat-list-icon>shared</mat-icon>
+        <span>Partage de ressources</span>
+      </a>
+      <a mat-list-item routerLink="/communication" routerLinkActive="active-link">
+        <mat-icon mat-list-icon>chat</mat-icon>
+        <span>Communication pro</span>
+      </a>
+      <a mat-list-item routerLink="/cartographie" routerLinkActive="active-link" matButton="elevated">
+        <mat-icon mat-list-icon>map</mat-icon>
+        <span>Cartographie</span>
+      </a>
+      <a mat-list-item routerLink="/forum" routerLinkActive="active-link">
+        <mat-icon mat-list-icon>forum</mat-icon>
+        <span>Forum de discussion</span>
+      </a>
+      <a mat-list-item routerLink="/projet" routerLinkActive="active-link">
+        <mat-icon mat-list-icon>assignment</mat-icon>
+        <span>Projets en cours</span>
+      </a>
+     
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="main-toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Accueil</span>
+      <span class="toolbar-spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="profileMenu">
+  <mat-icon>person</mat-icon>
+</button>
+
+<mat-menu #profileMenu="matMenu">
+    <button mat-menu-item >
+      <mat-icon>account_circle</mat-icon>
+      <span>Profil</span>
+    </button>
+    <button mat-menu-item >
+      <mat-icon>settings</mat-icon>
+      <span>Paramètres</span>
+    </button>
+    <button mat-menu-item >
+      <mat-icon>logout</mat-icon>
+      <span>Déconnexion</span>
+    </button>
+  </mat-menu>
+
+  </mat-toolbar>
+    
+
+    <div class="content">
+    <!-- contenu principal -->
+     <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
