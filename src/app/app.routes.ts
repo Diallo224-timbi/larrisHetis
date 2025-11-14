@@ -5,6 +5,8 @@ import { Forum } from './forum/forum';
 import { PRessource } from './pressource/pressource';
 import { Communication } from './communication/communication';
 import { ProjetCours } from './projet-cours/projet-cours';
+import { Authentification } from './authentification/authentification';
+import { Accueil } from './accueil/accueil';
 
 export const routes: Routes = [
     {
@@ -15,7 +17,9 @@ export const routes: Routes = [
       { path: 'forum', component: Forum },
       { path: 'partage', component: PRessource  },
       { path: 'communication', component: Communication },
-      { path: 'projet', component: ProjetCours } 
+      { path: 'projet', component: ProjetCours },
+      { path: 'login', component: Authentification},
+      { path: 'accueil', component: Accueil} 
     ]
     }  
 

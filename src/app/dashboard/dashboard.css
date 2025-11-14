@@ -57,7 +57,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #153a2f; /* Vert très foncé / presque noir */
+  background: #d2f5ea; /* Vert très foncé / presque noir */
   color: #06FCE7; /* Bleu cyan pour contraste */
   display: flex;
   align-items: center;
